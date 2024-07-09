@@ -69,7 +69,7 @@ function Home() {
                         <div className="flex items-end text-base">
                             <div className="flex-col self-end">
                                 <div>Delivering</div>
-                                <div>performance</div>
+                                <div>Palak's</div>
                                 <div>with integrity</div>
                             </div>
                         </div>
