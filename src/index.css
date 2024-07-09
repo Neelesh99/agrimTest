@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'algeria';
+    src: url("./fonts/ALGERIA.ttf") format('ttf');
+}

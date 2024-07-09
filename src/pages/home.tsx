@@ -1,0 +1,158 @@
+import imageSrc from "../assets/agrim logo transparent.png"
+import workersSorting from "../assets/workersSorting.png"
+import cassia from "../assets/cassia.png"
+import nutmeg from "../assets/nutmeg.png"
+import cloves from "../assets/Cloves.png"
+import blackPepper from "../assets/Black Pepper.png"
+
+function NavigationButton(props: {name: string}) {
+    return (
+        <div className="group px-1 transition cursor-pointer">
+            {props.name}
+            <span className="block max-w-0 group-hover:max-w-full rounded transition-all duration-300 h-0.5 bg-orange-500"></span>
+        </div>
+    )
+}
+
+function NavigationSpacer() {
+    return (
+        <div>•</div>
+    )
+}
+
+function getProductCard(props: {name: string, url: string}) {
+    return <div className="w-1/4 h-64 bg-orange-600 grid grid-cols-1 grid-rows-6 rounded-lg  hover:bg-zinc-100 hover:text-orange-700">
+        <div className="row-span-5">
+            <img className="w-full h-full bg-cover" src={props.url}/>
+        </div>
+        <div className="row-span-1 p-2 text-center transition duration-300 rounded-b-lg cursor-pointer">
+            {props.name}
+        </div>
+    </div>;
+}
+
+function getButton(props: {name: string}) {
+    return <div
+        className="text-center bg-orange-600 py-2 px-1 rounded-sm cursor-pointer hover:bg-orange-700 transition duration-300">
+        {props.name}
+    </div>;
+}
+
+function Home() {
+
+    let backgrounClassNames = `w-full h-screen max-h-[600px] relative
+    overflow-hidden
+    block
+    z-10
+
+    bg-[url('assets/frontImage.png')]
+    bg-cover
+    bg-no-repeat
+    bg-center
+
+    before:content-['']
+    before:absolute
+    before:inset-0
+    before:block
+    before:bg-gradient-to-r
+    before:from-zinc-100
+    before:to-zinc-100/0
+    before:w-1/6
+    before:z-[-5]`
+
+    return (
+        <div className="h-fit bg-zinc-100 w-full">
+            <div className="flex space-x-2 p-2">
+                <div className="flex flex-row justify-between w-full">
+                    <div className="flex flex-row">
+                        <img className="object-contain h-32 w-52" src={imageSrc}/>
+                        <div className="flex items-end text-base">
+                            <div className="flex-col self-end">
+                                <div>Delivering</div>
+                                <div>performance</div>
+                                <div>with integrity</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="flex items-end px-2">
+                        <div className="flex flex-row">
+                            <NavigationButton name="About Us"/>
+                            <NavigationSpacer/>
+                            <NavigationButton name="Products"/>
+                            <NavigationSpacer/>
+                            <NavigationButton name="Exhibitions"/>
+                            <NavigationSpacer/>
+                            <NavigationButton name="Contact Us"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="h-6 bg-orange-500 mt-2">
+
+            </div>
+            <div className="h-fit bg-zinc-100 rounded-lg">
+                <div className="grid grid-cols-4">
+                    <div className="p-4 text-gray-900 flex flex-row items-center">
+                        <div>
+                            <h1 className="text-4xl">Trading & processing of Indonesian Spices in 150+ countries</h1>
+                        </div>
+                    </div>
+                    <div className="rounded-xl h-full w-full flex flex-row col-span-3">
+                        {/*<img className="w-fit bg-cover " src={frontImage}/>*/}
+                        <div className={backgrounClassNames}></div>
+                    </div>
+                </div>
+            </div>
+            <div className="bg-slate-100 w-full h-fit">
+                <div className="py-10 flex flex-row text-white">
+                    <div className="w-2/3 rounded-r-xl">
+                        <img className="w-full h-full" src={workersSorting}/>
+                    </div>
+                    <div className="w-1/3 flex flex-col space-y-10">
+                        <div className="px-10 pt-2 text-center text-lg">
+                            <div className="text-slate-900">
+                                Present in the <span
+                                className="text-orange-600">Indonesian spice market since 2004,</span> we have acquired
+                                in-depth knowledge & expertise of Present in the Indonesian spice market
+                                since 2004.
+                                <br/>
+                                <br/>
+                                We have acquired in-depth knowledge & expertise of regional products, helping us develop
+                                an <span
+                                className="text-orange-600">international customer base of XX+ customers.</span> regional
+                                products, helping us develop an international customer base of XX+ customers.
+                            </div>
+                        </div>
+                        <div className="w-full">
+                            <div className="w-1/3 mx-auto">
+                                {getButton({name: "About Us"})}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="bg-slate-900 w-full h-fit text-white flex flex-col">
+                <div className="w-full p-4 mx-auto">
+                    <div className="text-center font-bold">Our Products</div>
+                </div>
+                <div className="w-full">
+                    <div className="mx-auto w-5/6">
+                        <div className="flex flex-row space-x-10 w-full">
+                            {getProductCard({name: "Cassia", url: cassia})}
+                            {getProductCard({name: "Nutmeg and Mace", url: nutmeg})}
+                            {getProductCard({name: "Cloves", url: cloves})}
+                            {getProductCard({name: "Black Pepper", url: blackPepper})}
+                        </div>
+                    </div>
+                </div>
+                <div className="p-4 w-full h-fit">
+                    <div className="w-1/6 mx-auto">
+                        {getButton({name: "More Products"})}
+                    </div>
+                </div>
+            </div>
+        </div>
+    )
+}
+
+export default Home;
