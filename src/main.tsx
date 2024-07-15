@@ -8,6 +8,7 @@ import {
 import Home from "./pages/home.tsx";
 import ContactUsPage from "./pages/contactUs.tsx";
 import AboutUsPage from "./pages/aboutUs.tsx";
+import ProductsPage from "./pages/products.tsx";
 
 function frameContent(element: ReactElement) {
     return (<div className="container mx-auto">
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
     {
         path: "/agrimTest/aboutUs",
         element: frameContent(<AboutUsPage/>),
+    },
+    {
+        path: "/agrimTest/products",
+        element: frameContent(<ProductsPage/>),
     }
 ]);
 

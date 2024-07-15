@@ -38,7 +38,7 @@ function Header() {
                 <div className="flex flex-row">
                     <NavigationButton name="About Us" link="/agrimTest/aboutUs"/>
                     <NavigationSpacer/>
-                    <NavigationButton name="Products" link="/agrimTest/"/>
+                    <NavigationButton name="Products" link="/agrimTest/products"/>
                     <NavigationSpacer/>
                     <NavigationButton name="Exhibitions" link="/agrimTest/"/>
                     <NavigationSpacer/>
