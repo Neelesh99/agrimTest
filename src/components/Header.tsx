@@ -19,13 +19,13 @@ function NavigationSpacer() {
 }
 
 function Header() {
-
+    const navigate = useNavigate();
     return (
         <div className="h-fit bg-zinc-100 w-full container mx-auto sticky z-20 top-0">
         <div className="flex space-x-2 p-2">
         <div className="flex flex-row justify-between w-full">
             <div className="flex flex-row">
-                <img className="object-contain h-32 w-52" src={imageSrc}/>
+                <img className="object-contain h-32 w-52 cursor-pointer" src={imageSrc} onClick={() => navigate("/agrimTest/")}/>
                 <div className="flex items-end text-base">
                     <div className="flex-col self-end">
                         <div>Delivering</div>
@@ -36,7 +36,7 @@ function Header() {
             </div>
             <div className="flex items-end px-2">
                 <div className="flex flex-row">
-                    <NavigationButton name="About Us" link="/agrimTest/"/>
+                    <NavigationButton name="About Us" link="/agrimTest/aboutUs"/>
                     <NavigationSpacer/>
                     <NavigationButton name="Products" link="/agrimTest/"/>
                     <NavigationSpacer/>

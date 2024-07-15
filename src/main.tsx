@@ -1,6 +1,5 @@
 import React, {ReactElement} from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.tsx'
 import './index.css'
 import {
     createBrowserRouter,
@@ -8,6 +7,7 @@ import {
 } from "react-router-dom";
 import Home from "./pages/home.tsx";
 import ContactUsPage from "./pages/contactUs.tsx";
+import AboutUsPage from "./pages/aboutUs.tsx";
 
 function frameContent(element: ReactElement) {
     return (<div className="container mx-auto">
@@ -23,6 +23,10 @@ const router = createBrowserRouter([
     {
         path: "/agrimTest/contactUs",
         element: frameContent(<ContactUsPage/>),
+    },
+    {
+        path: "/agrimTest/aboutUs",
+        element: frameContent(<AboutUsPage/>),
     }
 ]);
 
