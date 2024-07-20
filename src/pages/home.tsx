@@ -5,13 +5,16 @@ import cloves from "../assets/Cloves.png"
 import blackPepper from "../assets/Black Pepper.png"
 import Header from "../components/Header.tsx";
 import Footer from "../components/Footer.tsx";
+import {useNavigate} from "react-router-dom";
 
-function getProductCard(props: {name: string, url: string}) {
+function getProductCard(props: {name: string, url: string, link: string}) {
+    const fullLink = "/agrimTest/product/" + props.link;
+    const navigate = useNavigate();
     return <div className="w-1/4 h-64 bg-orange-600 grid grid-cols-1 grid-rows-6 rounded-lg  hover:bg-zinc-100 hover:text-orange-700">
         <div className="row-span-5">
             <img className="w-full h-full bg-cover" src={props.url}/>
         </div>
-        <div className="row-span-1 p-2 text-center transition duration-300 rounded-b-lg cursor-pointer">
+        <div className="row-span-1 p-2 text-center transition duration-300 rounded-b-lg cursor-pointer" onClick={() => navigate(fullLink)}>
             {props.name}
         </div>
     </div>;
@@ -101,10 +104,10 @@ function Home() {
                     <div className="w-full">
                         <div className="mx-auto w-5/6">
                             <div className="flex flex-row space-x-10 w-full">
-                                {getProductCard({name: "Cassia", url: cassia})}
-                                {getProductCard({name: "Nutmeg and Mace", url: nutmeg})}
-                                {getProductCard({name: "Cloves", url: cloves})}
-                                {getProductCard({name: "Black Pepper", url: blackPepper})}
+                                {getProductCard({name: "Cassia", url: cassia, link: "cassia"})}
+                                {getProductCard({name: "Nutmeg and Mace", url: nutmeg, link: "nutmeg"})}
+                                {getProductCard({name: "Cloves", url: cloves, link: "cloves"})}
+                                {getProductCard({name: "Black Pepper", url: blackPepper, link: "blackPepper"})}
                             </div>
                         </div>
                     </div>

@@ -9,6 +9,7 @@ import Home from "./pages/home.tsx";
 import ContactUsPage from "./pages/contactUs.tsx";
 import AboutUsPage from "./pages/aboutUs.tsx";
 import ProductsPage from "./pages/products.tsx";
+import ProductOverviewPage from "./pages/productOverviewPage.tsx";
 
 function frameContent(element: ReactElement) {
     return (<div className="container mx-auto">
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
     {
         path: "/agrimTest/products",
         element: frameContent(<ProductsPage/>),
+    },
+    {
+        path: "agrimTest/product/:productId",
+        element: frameContent(<ProductOverviewPage/>)
     }
 ]);
 
