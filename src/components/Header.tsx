@@ -21,7 +21,7 @@ function NavigationSpacer() {
 function Header() {
     const navigate = useNavigate();
     return (
-        <div className="h-fit bg-zinc-100 w-full container mx-auto sticky z-20 top-0">
+        <div className="h-fit bg-white w-full container mx-auto sticky z-20 top-0">
         <div className="flex space-x-2 p-2">
         <div className="flex flex-row justify-between w-full">
             <div className="flex flex-row">

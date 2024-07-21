@@ -3,6 +3,9 @@ import cassia from "../assets/original/cassia.jpg"
 import nutmeg from "../assets/original/nutmegOnly.jpg"
 import cloves from "../assets/Cloves.png"
 import blackPepper from "../assets/original/blackPepper.jpg"
+import qualityLogo from "../assets/original/quality certified logo.png"
+import gmp from "../assets/original/GMP logo.jpg"
+import haccp from "../assets/original/HACCP logo.jpg"
 import Header from "../components/Header.tsx";
 import Footer from "../components/Footer.tsx";
 import {useNavigate} from "react-router-dom";
@@ -34,7 +37,7 @@ function Home() {
     block
     z-10
 
-    bg-[url('assets/original/DSC02828.jpg')]
+    bg-[url('assets/original/coverImage.jpg')]
     bg-cover
     bg-no-repeat
     bg-center
@@ -44,16 +47,16 @@ function Home() {
     before:inset-0
     before:block
     before:bg-gradient-to-r
-    before:from-zinc-100
-    before:to-zinc-100/0
+    before:from-white
+    before:to-white/0
     before:w-1/6
     before:z-[-5]`
 
     return (
         <div>
             <Header/>
-            <div className="h-fit bg-zinc-100 w-full relative">
-                <div className="h-fit bg-zinc-100 rounded-lg">
+            <div className="h-fit w-full relative">
+                <div className="h-fit rounded-lg">
                     <div className="grid grid-cols-4">
                         <div className="p-4 text-gray-900 flex flex-row items-center">
                             <div>
@@ -67,7 +70,7 @@ function Home() {
                         </div>
                     </div>
                 </div>
-                <div className="bg-slate-100 w-full h-fit">
+                <div className="w-full h-fit">
                     <div className="py-10 flex flex-row text-white">
                         <div className="w-2/3 rounded-r-xl">
                             <img className="w-full h-full" src={workersSorting}/>
@@ -99,7 +102,7 @@ function Home() {
                 </div>
                 <div className="bg-slate-900 w-full h-fit text-white flex flex-col">
                     <div className="w-full p-4 mx-auto">
-                        <div className="text-center font-bold">Our Products</div>
+                        <div className="text-center font-bold text-xl">Our Products</div>
                     </div>
                     <div className="w-full">
                         <div className="mx-auto w-5/6">
@@ -115,6 +118,16 @@ function Home() {
                         <div className="w-1/6 mx-auto">
                             {getButton({name: "More Products"})}
                         </div>
+                    </div>
+                </div>
+                <div className="w-full h-fit flex flex-col">
+                    <div className="w-full p-4 mx-auto">
+                        <div className="text-center font-bold text-xl">Certifications</div>
+                    </div>
+                    <div className="w-11/12 h-52 grid grid-rows-1 grid-cols-3 mx-auto mb-12">
+                        <div className="mx-auto"><img className="h-52 object-cover" src={qualityLogo}/></div>
+                        <div className="mx-auto"><img className="h-52 object-cover" src={gmp}/></div>
+                        <div className="mx-auto"><img className="h-52 object-cover" src={haccp}/></div>
                     </div>
                 </div>
             </div>
