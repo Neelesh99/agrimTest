@@ -4,7 +4,7 @@ import Header from "../components/Header.tsx";
 import {findProductData, ProductData} from "../data/ProductsPageDataSource.tsx";
 
 function capitalize(str: String){
-    return str.charAt(0).toUpperCase() + str.slice(1);
+    return str.charAt(0).toUpperCase() + str.slice(1).replace(/([A-Z])/g, ' $1').trim();
 }
 
 function ProductOverviewPage() {
