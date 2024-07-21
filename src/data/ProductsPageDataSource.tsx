@@ -3,6 +3,11 @@ import cloves from "../assets/Cloves.png"
 import nutmeg from "../assets/original/nutmegOnly.jpg"
 import mace from "../assets/original/mace.jpg"
 import blackPepper from "../assets/original/blackPepper.jpg"
+import clovesStem from "../assets/original/cloveStem.jpg"
+import starAnise from "../assets/original/starAnise.jpg"
+import longPepper from "../assets/original/LongPepper-1.jpg"
+import tumericSlices from "../assets/original/tumericSlices.jpg"
+import galangalSlices from "../assets/original/GalangalSlices.jpg"
 
 export interface ProductData {
     description: JSX.Element,
@@ -24,6 +29,21 @@ export function findProductData(productName: string): ProductData | undefined {
     }
     if (productName === "mace") {
         return maceDescription()
+    }
+    if (productName === "clovesStem") {
+        return clovesStemDescription()
+    }
+    if (productName === "starAnise") {
+        return starAniseDescription()
+    }
+    if (productName === "longPepper") {
+        return longPepperDescription()
+    }
+    if (productName === "tumericSlices") {
+        return tumericSlicesDescription()
+    }
+    if (productName === "galangalSlices") {
+        return galangalSlicesDescription()
     }
     return undefined
 }
@@ -77,5 +97,40 @@ function blackPepperDescription() {
     return {
         description: <div>Black Pepper is the dried berry of Piper nigrum. This vine, which can grow up to ten feet tall, is indigenous to India and Southeast Asia. Pepper are actually berries that are picked about nine months after flowering. Black Pepper, the spiciest, is made from berries that are picked unripe. The berries used for White Pepper are ripened on the vine and soaked so that their outer hulls are easily removed. Green Peppercorns are immature berries that are freeze dried or packed in brine for preservation. Pepper is grown in India, Indonesia, Vietnam, Malaysia, and Brazil.</div>,
         imageSrc: blackPepper
+    }
+}
+
+function clovesStemDescription() {
+    return {
+        description: <div>Clove Stem - the stems of cloves collected after picking buds from the trees. It has natural oil, which is extracted and used for medicinal, pharmaceutical, and cosmetic purposes. Clove stem is also used with clove buds for grinding into powder to be used as spices and mixed curry. Clove stems are processed and hand cleaned from any foreign matter and leaves, and then sun dried before packing in PP bags.</div>,
+        imageSrc: clovesStem
+    }
+}
+
+function starAniseDescription() {
+    return {
+        description: <div>Star Anise is the dried fruit of the Illicium verum tree, native to northeast Vietnam and southern China. This evergreen tree can grow up to 26 feet tall and bears star-shaped fruits, each containing seeds with a licorice-like flavor. The fruits are harvested just before ripening and then dried to enhance their aroma and taste. Star Anise is a key ingredient in Chinese five-spice powder and is also used to flavor dishes in Indian, Vietnamese, and Malaysian cuisines. In addition to its culinary uses, Star Anise is prized for its medicinal properties.</div>,
+        imageSrc: starAnise
+    }
+}
+
+function longPepperDescription() {
+    return {
+        description: <div>Long Pepper - The tiny berries, which merge into a single, rod-like structure, bear some resemblance to catkins (flowers of trees like hazelnut or willow). It tastes hot and warm, with sweet overtones. The species Piper longum is of South Asian origin and is mostly cultivated in Indonesia (Madura, Java) and Thailand.</div>,
+        imageSrc: longPepper
+    }
+}
+
+function tumericSlicesDescription() {
+    return {
+        description: <div>Turmeric is the dried root of the plant Curcuma longa. Noted for its bright yellow color, it is related to and similar in size to ginger. Turmeric has been used in Asia for thousands of years and is a major part of Ayurvedic medicine. It was first used as a dye, and then later for its medicinal properties. We offer Indonesian Turmeric Slices that are known for their high quality and high Curcuma content. These slices are well dried with a high curcumin percentage, which is responsible for the bright yellow color that is used as a yellow food colorant and food additive.</div>,
+        imageSrc: tumericSlices
+    }
+}
+
+function galangalSlicesDescription() {
+    return {
+        description: <div>At first, galangal or 'Khaa' in Thai, appears similar to ginger. However, a closer look will reveal the difference between galangal and ginger. Galangal has a tighter skin, is lighter in color, and can have pinkish portions too. Galangal tastes more like pepper than ginger, even though both grow underground as roots, and the method used to cook them (in various dishes) is similar too. The galangal that originated in Indonesia is also called, lengkuas and has a sharp flavour and pine like aroma. This is more commonly found in fresh or dried (powder) form. The second type of galangal, has a pungent flavour and tastes like a combination of pepper and ginger. It is commonly used as a seasoning ingredient in Thai food and many seafood, meat, and curry dishes.</div>,
+        imageSrc: galangalSlices
     }
 }

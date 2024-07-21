@@ -1,6 +1,6 @@
 import workersSorting from "../assets/workersSorting.png"
 import cassia from "../assets/original/cassia.jpg"
-import nutmeg from "../assets/original/nutmeg.jpg"
+import nutmeg from "../assets/original/nutmegOnly.jpg"
 import cloves from "../assets/Cloves.png"
 import blackPepper from "../assets/original/blackPepper.jpg"
 import Header from "../components/Header.tsx";
@@ -105,7 +105,7 @@ function Home() {
                         <div className="mx-auto w-5/6">
                             <div className="flex flex-row space-x-10 w-full">
                                 {getProductCard({name: "Cassia", url: cassia, link: "cassia"})}
-                                {getProductCard({name: "Nutmeg and Mace", url: nutmeg, link: "nutmeg"})}
+                                {getProductCard({name: "Nutmeg", url: nutmeg, link: "nutmeg"})}
                                 {getProductCard({name: "Cloves", url: cloves, link: "cloves"})}
                                 {getProductCard({name: "Black Pepper", url: blackPepper, link: "blackPepper"})}
                             </div>
