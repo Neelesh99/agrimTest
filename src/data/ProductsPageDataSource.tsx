@@ -1,7 +1,8 @@
-import cassia from "../assets/cassia.png"
+import cassiaOriginal from "../assets/original/cassia.jpg"
 import cloves from "../assets/Cloves.png"
-import nutmeg from "../assets/nutmeg.png"
-import blackPepper from "../assets/Black Pepper.png"
+import nutmeg from "../assets/original/nutmegOnly.jpg"
+import mace from "../assets/original/mace.jpg"
+import blackPepper from "../assets/original/blackPepper.jpg"
 
 export interface ProductData {
     description: JSX.Element,
@@ -20,6 +21,9 @@ export function findProductData(productName: string): ProductData | undefined {
     }
     if (productName === "blackPepper") {
         return blackPepperDescription()
+    }
+    if (productName === "mace") {
+        return maceDescription()
     }
     return undefined
 }
@@ -44,7 +48,7 @@ function cassiaElements() {
 function cassiaDescription() : ProductData {
     return {
         description: cassiaElements(),
-        imageSrc: cassia
+        imageSrc: cassiaOriginal
     }
 }
 
@@ -59,6 +63,13 @@ function nutmegDescription() {
     return {
         description: <div>Nutmeg is the actual seed of the tree, roughly egg-shaped and about 20 mm to 30 mm (1 inch) long and 15 mm to 18 mm (¾ inch) wide, and weighing between 5 g and 10 g (¼ ounce and ½ ounce) dried, while mace is the dried "lacy" reddish covering or arillus of the seed.</div>,
         imageSrc: nutmeg
+    }
+}
+
+function maceDescription() {
+    return {
+        description: <div>Mace - The nutmeg tree, Myristica fragrans, is special in that it produces two separate spices, nutmeg and Mace. Mace is the ground outer covering (aril) of the nutmeg seed. A piece of unground Mace is called a blade. In its natural state, mace is a bright crimson lace up to 35 mm (1-1/2 in) long, encasing the brown nutmeg in irregular, fleshy lobes. As it is dried, it develops its characteristic aroma but loses its bright red color. The mace can become brittle and horny, though the best quality mace will retain some pliability and release a little oil when squeezed. It grows in Indonesia (Siaw-Ambon and Papua Islands).</div>,
+        imageSrc: mace
     }
 }
 

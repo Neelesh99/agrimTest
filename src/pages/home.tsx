@@ -1,8 +1,8 @@
 import workersSorting from "../assets/workersSorting.png"
-import cassia from "../assets/cassia.png"
-import nutmeg from "../assets/nutmeg.png"
+import cassia from "../assets/original/cassia.jpg"
+import nutmeg from "../assets/original/nutmeg.jpg"
 import cloves from "../assets/Cloves.png"
-import blackPepper from "../assets/Black Pepper.png"
+import blackPepper from "../assets/original/blackPepper.jpg"
 import Header from "../components/Header.tsx";
 import Footer from "../components/Footer.tsx";
 import {useNavigate} from "react-router-dom";
@@ -12,7 +12,7 @@ function getProductCard(props: {name: string, url: string, link: string}) {
     const navigate = useNavigate();
     return <div className="w-1/4 h-64 bg-orange-600 grid grid-cols-1 grid-rows-6 rounded-lg  hover:bg-zinc-100 hover:text-orange-700">
         <div className="row-span-5">
-            <img className="w-full h-full bg-cover" src={props.url}/>
+            <img className="w-full h-full object-cover rounded-t-lg" src={props.url}/>
         </div>
         <div className="row-span-1 p-2 text-center transition duration-300 rounded-b-lg cursor-pointer" onClick={() => navigate(fullLink)}>
             {props.name}
@@ -34,7 +34,7 @@ function Home() {
     block
     z-10
 
-    bg-[url('assets/frontImage.png')]
+    bg-[url('assets/original/DSC02828.jpg')]
     bg-cover
     bg-no-repeat
     bg-center

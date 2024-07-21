@@ -20,7 +20,7 @@ function ProductOverviewPage() {
         </div>
         <div className="w-full flex justify-around py-6">
             <div className="w-5/6 flex flex-row flex-wrap pb-10 justify-around">
-                <img className="w-1/3 rounded-md" src={imageSrc}/>
+                <img className="w-5/12 rounded-md object-contain" src={imageSrc}/>
                 <div className="w-1/2 text-left">{description}</div>
             </div>
         </div>
