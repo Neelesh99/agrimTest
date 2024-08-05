@@ -98,8 +98,8 @@ function Home() {
                         </div>
                     </div>
                 </div>
-                <div className="bg-darkness w-full h-fit text-white flex flex-col">
-                    <div className="w-full p-8 mx-auto">
+                <div className="bg-darkness w-full h-fit text-white flex flex-col py-4">
+                    <div className="w-full pb-8 pt-4 mx-auto">
                         <div className="text-center font-bold text-2xl">Our Products</div>
                     </div>
                     <div className="w-full">

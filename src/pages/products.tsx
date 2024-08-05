@@ -46,9 +46,9 @@ function ProductsPage() {
             {getProductCard({name: "Galangal Slices", imageUrl: galangalSlices, link: "galangalSlices"})}
         </div>
         <div className="w-4/6 mx-auto">
-            <div className="pb-8">
+            <div className="py-12">
                 <LiteYouTubeEmbed
-                    id="pQaG0ay957M"
+                    id="-aQHq6ZLDGI"
                     title="Placeholder video"
                 />
             </div>
