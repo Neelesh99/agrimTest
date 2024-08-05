@@ -45,7 +45,7 @@ function ProductsPage() {
             {getProductCard({name: "Tumeric Slices", imageUrl: tumericSlices, link: "tumericSlices"})}
             {getProductCard({name: "Galangal Slices", imageUrl: galangalSlices, link: "galangalSlices"})}
         </div>
-        <div className="w-5/6 mx-auto">
+        <div className="w-4/6 mx-auto">
             <div className="pb-8">
                 <LiteYouTubeEmbed
                     id="L2vS_050c-M"
