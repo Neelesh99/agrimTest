@@ -4,14 +4,14 @@ import Footer from "../components/Footer.tsx";
 function EntryBox(props: {label: string}) {
     return <div className="flex flex-col w-full space-y-1">
         <div className="text-slate-900 text-xl">{props.label}</div>
-        <input className="ring-2 ring-orange-600 rounded-sm p-2"/>
+        <input className="ring-2 ring-agrim rounded-sm p-2"/>
     </div>
 }
 
 function EntryBoxLarge(props: {label: string}) {
     return <div className="flex flex-col w-full space-y-1">
         <div className="text-slate-900 text-xl">{props.label}</div>
-        <textarea className="ring-2 ring-orange-600 rounded-sm h-56 p-2 align-top"/>
+        <textarea className="ring-2 ring-agrim rounded-sm h-56 p-2 align-top"/>
     </div>
 }
 

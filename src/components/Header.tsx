@@ -7,7 +7,7 @@ function NavigationButton(props: {name: string, link: string}) {
     return (
         <div className="group px-1 transition cursor-pointer" onClick={() => navigate(props.link)}>
             {props.name}
-            <span className="block max-w-0 group-hover:max-w-full rounded transition-all duration-300 h-0.5 bg-orange-500"></span>
+            <span className="block max-w-0 group-hover:max-w-full rounded transition-all duration-300 h-0.5 bg-agrim"></span>
         </div>
     )
 }
@@ -47,7 +47,7 @@ function Header() {
             </div>
         </div>
     </div>
-            <div className="h-6 bg-orange-500 mt-2"></div>
+            <div className="h-6 bg-agrim mt-2"></div>
     </div>)
 }
 

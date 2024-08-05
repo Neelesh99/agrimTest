@@ -18,7 +18,7 @@ function getProductCard(props: {
     link: string}) {
     const navigate = useNavigate();
     const fullLink = "/agrimTest/product/" + props.link;
-    return <div className="w-56 bg-orange-600 grid grid-cols-1 grid-rows-6 rounded-lg hover:bg-zinc-100 hover:text-orange-700 m-2">
+    return <div className="w-56 bg-agrim grid grid-cols-1 grid-rows-6 rounded-lg hover:bg-slate-50 hover:text-agrim m-2">
         <div className="row-span-5">
             <img className="w-full h-52 object-cover rounded-t-lg" src={props.imageUrl}/>
         </div>

@@ -13,7 +13,7 @@ import {useNavigate} from "react-router-dom";
 function getProductCard(props: {name: string, url: string, link: string}) {
     const fullLink = "/agrimTest/product/" + props.link;
     const navigate = useNavigate();
-    return <div className="w-1/4 h-64 bg-orange-600 grid grid-cols-1 grid-rows-6 rounded-lg  hover:bg-zinc-100 hover:text-orange-700">
+    return <div className="w-1/4 h-64 bg-agrimDark grid grid-cols-1 grid-rows-6 rounded-lg  hover:bg-lightness hover:text-agrimDark">
         <div className="row-span-5">
             <img className="w-full h-full object-cover rounded-t-lg" src={props.url}/>
         </div>
@@ -25,7 +25,7 @@ function getProductCard(props: {name: string, url: string, link: string}) {
 
 function getButton(props: {name: string}) {
     return <div
-        className="text-center bg-orange-600 py-2 px-1 rounded-sm cursor-pointer hover:bg-orange-700 transition duration-300">
+        className="text-center bg-agrim py-2 px-1 rounded-sm cursor-pointer hover:bg-agrimDark transition duration-300">
         {props.name}
     </div>;
 }

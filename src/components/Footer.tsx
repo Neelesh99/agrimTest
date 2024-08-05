@@ -19,7 +19,7 @@ function ExhibitionCard() {
 }
 
 function Footer() {
-    return <div className="bg-orange-600 w-full h-fit p-2 bottom-0">
+    return <div className="bg-agrim w-full h-fit p-2 bottom-0">
         <div className="mx-12 flex justify-between">
             <div className="text-white">marketing@agrimltd.com <br/>
                 +65 6638 8646 <br/>
