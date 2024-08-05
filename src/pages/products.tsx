@@ -48,8 +48,8 @@ function ProductsPage() {
         <div className="w-4/6 mx-auto">
             <div className="pb-8">
                 <LiteYouTubeEmbed
-                    id="L2vS_050c-M"
-                    title="What’s new in Material Design for the web (Chrome Dev Summit 2019)"
+                    id="pQaG0ay957M"
+                    title="Placeholder video"
                 />
             </div>
         </div>

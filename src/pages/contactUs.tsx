@@ -1,3 +1,4 @@
+import emailjs from 'emailjs-com';
 
 function EntryBox(props: {label: string}) {
     return <div className="flex flex-col w-full space-y-1">
@@ -15,9 +16,21 @@ function EntryBoxLarge(props: {label: string}) {
 
 function getButton(props: {name: string}) {
     return <div
+        onClick={() => sendEmail("Hello")}
         className="text-center text-white bg-orange-600 py-2 px-1 rounded-sm cursor-pointer hover:bg-orange-700 transition duration-300 w-32">
         {props.name}
     </div>;
+}
+
+function sendEmail(message: string) {
+    // e.preventDefault();    //This is important, i'm not sure why, but the email won't send without it
+
+    emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', {message: message}, 'YOUR_USER_ID')
+        .then((result) => {
+            window.location.reload()  //This is if you still want the page to reload (since e.preventDefault() cancelled that behavior)
+        }, (error) => {
+            console.log(error.text);
+        });
 }
 
 function ContactUsPage() {
