@@ -9,6 +9,8 @@ import longPepper from "../assets/original/LongPepperSwuare.jpeg"
 import tumericSlices from "../assets/original/tumericSlices.jpg"
 import galangalSlices from "../assets/original/GalangalSlices.jpg"
 import {useNavigate} from "react-router-dom";
+import LiteYouTubeEmbed from 'react-lite-youtube-embed';
+import 'react-lite-youtube-embed/dist/LiteYouTubeEmbed.css'
 
 function getProductCard(props: {
     name: string,
@@ -31,7 +33,7 @@ function ProductsPage() {
         <div className="w-full text-slate-900 text-center font-bold text-4xl p-4">
             Our Products
         </div>
-        <div className="flex flex-wrap text-white w-3/4 mx-auto">
+        <div className="flex flex-wrap text-white w-3/4 mx-auto py-6">
             {getProductCard({name: "Cassia", imageUrl: cassia, link: "cassia"})}
             {getProductCard({name: "Cloves", imageUrl: cloves, link: "cloves"})}
             {getProductCard({name: "Nutmeg", imageUrl: nutmeg, link: "nutmeg"})}
@@ -42,6 +44,14 @@ function ProductsPage() {
             {getProductCard({name: "Long Pepper", imageUrl: longPepper, link: "longPepper"})}
             {getProductCard({name: "Tumeric Slices", imageUrl: tumericSlices, link: "tumericSlices"})}
             {getProductCard({name: "Galangal Slices", imageUrl: galangalSlices, link: "galangalSlices"})}
+        </div>
+        <div className="w-5/6 mx-auto">
+            <div className="pb-8">
+                <LiteYouTubeEmbed
+                    id="L2vS_050c-M"
+                    title="What’s new in Material Design for the web (Chrome Dev Summit 2019)"
+                />
+            </div>
         </div>
     </div>
 }
