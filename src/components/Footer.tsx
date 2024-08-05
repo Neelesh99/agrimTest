@@ -1,5 +1,6 @@
 import germanFlag from "../assets/germanFlag.png"
 import anugaLogo from "../assets/anugaLogo.png"
+import {useNavigate} from "react-router-dom";
 
 function ExhibitionCard() {
     return <div className="grid grid-cols-1 grid-rows-6">
@@ -19,11 +20,12 @@ function ExhibitionCard() {
 }
 
 function Footer() {
-    return <div className="bg-agrim w-full h-fit p-2 bottom-0">
+    const navigate = useNavigate();
+    return <div className="bg-agrim w-full h-fit p-6 bottom-0">
         <div className="mx-12 flex justify-between">
             <div className="text-white">marketing@agrimltd.com <br/>
                 +65 6638 8646 <br/>
-                Contact us <br/>
+                <div onClick={() => navigate("/agrimTest/contactUs")} className="cursor-pointer">Contact us</div> <br/>
                 <br/>
                 AGRIM PTE LTD <br/>
                 60 Paya Lebar Road, <br/>

@@ -1,10 +1,7 @@
-import Header from "../components/Header.tsx";
-import Footer from "../components/Footer.tsx";
 import companyPic from "../assets/companyPic.png"
 
 function AboutUsPage() {
     return <div>
-        <Header/>
         <div className="w-full text-slate-900 text-center font-bold text-4xl p-4">
             About Us
         </div>
@@ -42,7 +39,6 @@ function AboutUsPage() {
                 Thanks to our experienced and dedicated workforce, we have positioned ourselves as a strong contender in the market. The company takes pride in its team of sincere, diligent, and committed staff. Our team members collaborate closely with each other to effectively and efficiently achieve the organization's goals. Comprehensive on-the-job training is provided to our workers, and workshops are regularly conducted to improve their skills, enhancing the expertise and abilities of our personnel.
             </div>
         </div>
-        <Footer/>
     </div>
 }
 

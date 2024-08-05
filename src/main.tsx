@@ -10,11 +10,18 @@ import ContactUsPage from "./pages/contactUs.tsx";
 import AboutUsPage from "./pages/aboutUs.tsx";
 import ProductsPage from "./pages/products.tsx";
 import ProductOverviewPage from "./pages/productOverviewPage.tsx";
+import Header from "./components/Header.tsx";
+import Footer from "./components/Footer.tsx";
 
 function frameContent(element: ReactElement) {
-    return (<div className="container mx-auto">
-        {element}
-    </div>)
+    return (
+        <div>
+            <Header/>
+            <div className="container mx-auto">
+                {element}
+            </div>
+            <Footer/>
+        </div>)
 }
 
 const router = createBrowserRouter([

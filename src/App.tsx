@@ -3,7 +3,7 @@ import Home from "./pages/home.tsx";
 
 function App() {
 
-  return (<div className="container mx-auto">
+  return (<div className="">
     <Home/>
   </div>)
 }

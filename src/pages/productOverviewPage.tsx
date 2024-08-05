@@ -1,6 +1,4 @@
 import {useParams} from "react-router-dom";
-import Footer from "../components/Footer.tsx";
-import Header from "../components/Header.tsx";
 import {findProductData, ProductData} from "../data/ProductsPageDataSource.tsx";
 
 function capitalize(str: String){
@@ -14,7 +12,6 @@ function ProductOverviewPage() {
     const description = productData.description
     const imageSrc = productData.imageSrc
     return <div>
-        <Header/>
         <div className="w-full text-slate-900 text-center font-bold text-4xl p-4">
             {capitalize(productId as string)}
         </div>
@@ -24,7 +21,6 @@ function ProductOverviewPage() {
                 <div className="w-1/2 text-left">{description}</div>
             </div>
         </div>
-        <Footer/>
     </div>
 }
 

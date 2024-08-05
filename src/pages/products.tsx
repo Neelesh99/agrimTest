@@ -1,5 +1,3 @@
-import Header from "../components/Header.tsx";
-import Footer from "../components/Footer.tsx";
 import cassia from "../assets/original/cassia.jpg"
 import nutmeg from "../assets/original/nutmegOnly.jpg";
 import mace from "../assets/original/mace.jpg"
@@ -30,7 +28,6 @@ function getProductCard(props: {
 
 function ProductsPage() {
     return <div>
-        <Header/>
         <div className="w-full text-slate-900 text-center font-bold text-4xl p-4">
             Our Products
         </div>
@@ -46,7 +43,6 @@ function ProductsPage() {
             {getProductCard({name: "Tumeric Slices", imageUrl: tumericSlices, link: "tumericSlices"})}
             {getProductCard({name: "Galangal Slices", imageUrl: galangalSlices, link: "galangalSlices"})}
         </div>
-        <Footer/>
     </div>
 }
 

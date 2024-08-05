@@ -21,34 +21,37 @@ function NavigationSpacer() {
 function Header() {
     const navigate = useNavigate();
     return (
-        <div className="h-fit bg-white w-full container mx-auto sticky z-20 top-0">
-        <div className="flex space-x-2 p-2">
-        <div className="flex flex-row justify-between w-full">
-            <div className="flex flex-row">
-                <img className="object-contain h-32 w-52 cursor-pointer" src={imageSrc} onClick={() => navigate("/agrimTest/")}/>
-                <div className="flex items-end text-base">
-                    <div className="flex-col self-end">
-                        <div>Delivering</div>
-                        <div>performance</div>
-                        <div>with integrity</div>
+        <div className="h-fit bg-white w-full mx-auto sticky z-20 top-0">
+            <div className="container mx-auto">
+                <div className="flex space-x-2 p-2">
+                    <div className="flex flex-row justify-between w-full">
+                        <div className="flex flex-row">
+                            <img className="object-contain h-32 w-52 cursor-pointer" src={imageSrc}
+                                 onClick={() => navigate("/agrimTest/")}/>
+                            <div className="flex items-end text-base">
+                                <div className="flex-col self-end">
+                                    <div>Delivering</div>
+                                    <div>performance</div>
+                                    <div>with integrity</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="flex items-end px-2">
+                            <div className="flex flex-row">
+                                <NavigationButton name="About Us" link="/agrimTest/aboutUs"/>
+                                <NavigationSpacer/>
+                                <NavigationButton name="Products" link="/agrimTest/products"/>
+                                <NavigationSpacer/>
+                                <NavigationButton name="Exhibitions" link="/agrimTest/"/>
+                                <NavigationSpacer/>
+                                <NavigationButton name="Contact Us" link="/agrimTest/contactUs"/>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div className="flex items-end px-2">
-                <div className="flex flex-row">
-                    <NavigationButton name="About Us" link="/agrimTest/aboutUs"/>
-                    <NavigationSpacer/>
-                    <NavigationButton name="Products" link="/agrimTest/products"/>
-                    <NavigationSpacer/>
-                    <NavigationButton name="Exhibitions" link="/agrimTest/"/>
-                    <NavigationSpacer/>
-                    <NavigationButton name="Contact Us" link="/agrimTest/contactUs"/>
-                </div>
-            </div>
-        </div>
-    </div>
-            <div className="h-6 bg-agrim mt-2"></div>
-    </div>)
+            <div className="h-6 bg-agrim mt-2 w-full"></div>
+        </div>)
 }
 
 export default Header;

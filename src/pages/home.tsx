@@ -6,8 +6,6 @@ import blackPepper from "../assets/original/blackPepper.jpg"
 import qualityLogo from "../assets/original/quality certified logo.png"
 import gmp from "../assets/original/GMP logo.jpg"
 import haccp from "../assets/original/HACCP logo.jpg"
-import Header from "../components/Header.tsx";
-import Footer from "../components/Footer.tsx";
 import {useNavigate} from "react-router-dom";
 
 function getProductCard(props: {name: string, url: string, link: string}) {
@@ -23,9 +21,12 @@ function getProductCard(props: {name: string, url: string, link: string}) {
     </div>;
 }
 
-function getButton(props: {name: string}) {
+function getButton(props: {name: string, link: string}) {
+    const fullLink = "/agrimTest/" + props.link;
+    const navigate = useNavigate();
     return <div
-        className="text-center bg-agrim py-2 px-1 rounded-sm cursor-pointer hover:bg-agrimDark transition duration-300">
+        className="text-center bg-agrim py-2 px-1 rounded-lg cursor-pointer hover:bg-agrimDark transition duration-300"
+        onClick={() => navigate(fullLink)}>
         {props.name}
     </div>;
 }
@@ -54,14 +55,13 @@ function Home() {
 
     return (
         <div>
-            <Header/>
             <div className="h-fit w-full relative">
                 <div className="h-fit rounded-lg">
                     <div className="grid grid-cols-4">
                         <div className="p-4 text-gray-900 flex flex-row items-center">
                             <div>
-                                <h1 className="text-4xl">Trading & processing of Indonesian Spices in 150+
-                                    countries</h1>
+                                <h1 className="text-4xl">Manufacturer and supplier of
+                                    spices and coconut ingredients from Indonesia & Vietnam</h1>
                             </div>
                         </div>
                         <div className="rounded-xl h-full w-full flex flex-row col-span-3">
@@ -79,7 +79,7 @@ function Home() {
                             <div className="px-10 pt-2 text-center text-lg">
                                 <div className="text-slate-900">
                                     Present in the <span
-                                    className="text-orange-600">Indonesian spice market since 2004,</span> we have
+                                    className="text-agrim">Indonesian spice market since 2004,</span> we have
                                     acquired
                                     in-depth knowledge & expertise of Present in the Indonesian spice market
                                     since 2004.
@@ -87,22 +87,20 @@ function Home() {
                                     <br/>
                                     We have acquired in-depth knowledge & expertise of regional products, helping us
                                     develop
-                                    an <span
-                                    className="text-orange-600">international customer base of XX+ customers.</span> regional
-                                    products, helping us develop an international customer base of XX+ customers.
+                                    an <span className="text-agrim">international customer base of XX+ customers.</span>
                                 </div>
                             </div>
                             <div className="w-full">
                                 <div className="w-1/3 mx-auto">
-                                    {getButton({name: "About Us"})}
+                                    {getButton({name: "About Us", link: "contactUs"})}
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div className="bg-slate-900 w-full h-fit text-white flex flex-col">
-                    <div className="w-full p-4 mx-auto">
-                        <div className="text-center font-bold text-xl">Our Products</div>
+                <div className="bg-darkness w-full h-fit text-white flex flex-col">
+                    <div className="w-full p-8 mx-auto">
+                        <div className="text-center font-bold text-2xl">Our Products</div>
                     </div>
                     <div className="w-full">
                         <div className="mx-auto w-5/6">
@@ -114,9 +112,9 @@ function Home() {
                             </div>
                         </div>
                     </div>
-                    <div className="p-4 w-full h-fit">
+                    <div className="p-6 w-full h-fit">
                         <div className="w-1/6 mx-auto">
-                            {getButton({name: "More Products"})}
+                            {getButton({name: "More Products", link: "products"})}
                         </div>
                     </div>
                 </div>
@@ -131,7 +129,6 @@ function Home() {
                     </div>
                 </div>
             </div>
-            <Footer/>
         </div>
 
     )

@@ -1,5 +1,3 @@
-import Header from "../components/Header.tsx";
-import Footer from "../components/Footer.tsx";
 
 function EntryBox(props: {label: string}) {
     return <div className="flex flex-col w-full space-y-1">
@@ -25,7 +23,6 @@ function getButton(props: {name: string}) {
 function ContactUsPage() {
 
     return <div>
-        <Header/>
         <div className="w-full text-slate-900 text-center font-bold text-4xl p-4">
             Contact Us
         </div>
@@ -38,7 +35,6 @@ function ContactUsPage() {
         <div className="p-16 mx-auto w-fit">
             {getButton({name: "Submit"})}
         </div>
-        <Footer/>
     </div>
 }
 
