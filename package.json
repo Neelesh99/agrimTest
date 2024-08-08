@@ -10,7 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@headlessui/react": "^1.7.19",
+    "@headlessui/react": "^2.1.2",
     "emailjs-com": "^3.2.0",
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.4",
