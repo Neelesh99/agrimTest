@@ -19,7 +19,7 @@ function ExhibitionCard() {
 }
 
 function Footer() {
-    return <div className="bg-agrim w-full h-fit p-6 bottom-0">
+    return <div className="bg-agrim w-screen h-fit p-6 bottom-0">
         <div className="mx-12 flex h-fit justify-between">
             <div className="py-14">
                 <div className="text-white text-xl">

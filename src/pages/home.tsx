@@ -60,7 +60,7 @@ function Home() {
                     <div className="grid grid-cols-4">
                         <div className="p-4 text-gray-900 flex flex-row items-center">
                             <div>
-                                <h1 className="text-6xl">Manufacturer and supplier of
+                                <h1 className="text-2xl lg:text-4xl 2xl:text-6xl">Manufacturer and supplier of
                                     spices and coconut ingredients from Indonesia & Vietnam</h1>
                             </div>
                         </div>

@@ -18,9 +18,9 @@ function frameContent(element: ReactElement) {
     return (
         <div>
             <Header/>
-            <div className="container mx-auto">
-                {element}
-            </div>
+                <div className="container mx-auto">
+                    {element}
+                </div>
             <Footer/>
         </div>)
 }
