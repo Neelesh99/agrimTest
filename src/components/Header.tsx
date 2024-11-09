@@ -1,14 +1,18 @@
 import imageSrc from "../assets/agrim logo transparent.png";
 import placeholder from "../assets/img.png"
-import {useNavigate} from "react-router-dom";
+import {useLocation, useNavigate} from "react-router-dom";
 
 
 function NavigationButton(props: {name: string, link: string}) {
     const navigate = useNavigate();
+    const location = useLocation();
+    const isCurrent = location.pathname === props.link;
     return (
         <div className="group px-1 transition cursor-pointer" onClick={() => navigate(props.link)}>
             {props.name}
-            <span className="block max-w-0 group-hover:max-w-full rounded transition-all duration-300 h-0.5 bg-agrim"></span>
+            {!isCurrent && <span className="block max-w-0 group-hover:max-w-full rounded transition-all duration-300 h-0.5 bg-agrim"></span>}
+            {isCurrent && <span
+                className="block max-w-full rounded h-0.5 bg-agrim"></span>}
         </div>
     )
 }

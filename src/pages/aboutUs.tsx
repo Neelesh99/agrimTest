@@ -11,7 +11,7 @@ import lab from "../assets/original/lab-icon.png"
 import {useEffect} from "react";
 
 function choiceCard(number: string, title: string, text: string) {
-    return <div className="flex flex-col h-64 w-1/4">
+    return <div className="flex flex-col h-fit w-1/4">
         <div className="flex flex-row">
             <div className="text-5xl pr-2 align-text-bottom">{number}</div>
             <div className="flex flex-col justify-end pb-2 w-full">
@@ -50,18 +50,18 @@ function AboutUsPage() {
                 Our endorsed facilities in Medan, Surabaya, Pontianak, and Hanoi meet the highest standards of quality
                 and safety, including FSSC-22000, ISO-9001, HACCP, and GMP certifications.
             </div>
-            <div className="pt-6">
+            <div className="pt-6 pb-12">
                 <img src={companyPic} className="w-3/5 mx-auto"/>
             </div>
             <div className="w-full text-slate-900 text-center text-3xl p-4">
                 Why choose us?
             </div>
-            <div className="flex flex-row justify-between">
+            <div className="flex flex-row justify-between pb-12">
                 {choiceCard("1", "Productivity & Efficiency", card1Text)}
                 {choiceCard("2", "Quality", card2Text)}
                 {choiceCard("3", "Origination", card3Text)}
             </div>
-            <div className="flex flex-row w-full">
+            <div className="flex flex-row w-full pt-6 pb-6">
                 <img src={firstAbout} className="max-h-64 w-5/12 mx-auto object-cover"/>
                 <img src={secondAbout} className="max-h-64 w-1/2 mx-auto object-cover"/>
             </div>
@@ -76,28 +76,28 @@ function AboutUsPage() {
                 We provide comprehensive on-the-job training and regularly hold workshops to continually enhance the
                 skills and expertise of our staff.
             </div>
-            <div className="w-full text-slate-900 text-center text-3xl p-4">
+            <div className="w-full text-slate-900 text-center text-3xl p-4 pt-10">
                 Our Facility
             </div>
             <div className="flex flex-row justify-between">
                 <div className="flex flex-col">
-                    <img src={factoryImg} className="h-32"/>
+                    <img src={factoryImg} className="h-32 object-cover"/>
                     <div>20,000 sqm factory</div>
                 </div>
                 <div className="flex flex-col">
-                    <img src={hygene} className="h-32"/>
+                    <img src={hygene} className="h-32 object-cover"/>
                     <div>Hygiene work space</div>
                 </div>
                 <div className="flex flex-col">
-                    <img src={skilled} className="h-32"/>
+                    <img src={skilled} className="h-32 object-cover"/>
                     <div>Skilled & trained workers</div>
                 </div>
                 <div className="flex flex-col">
-                    <img src={lab} className="h-32"/>
+                    <img src={lab} className="h-32 object-cover"/>
                     <div>Equipped in-house laboratory</div>
                 </div>
             </div>
-            <div className="w-full h-fit flex flex-col">
+            <div className="w-full h-fit flex flex-col pt-10">
                 <div className="w-full p-4 mx-auto flex flex-col mb-4">
                     <div className="text-center text-3xl">Certifications</div>
                     <div className="text-center text-xl">Our factory is accredited with ISO-9001, HACCP, GMP
