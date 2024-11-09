@@ -3,6 +3,7 @@ import gulffood from "../assets/original/Gulfood.png"
 import anuga from "../assets/original/anuga-logo-vector.png"
 import ift from "../assets/original/IFT-1920x1080-1.jpg"
 import thaifex from "../assets/original/images.png"
+import {useEffect} from "react";
 
 function getShow(location: string, imgUrl: string, dates: string) {
     return <div className="w-1/4 flex flex-col h-64">
@@ -13,6 +14,11 @@ function getShow(location: string, imgUrl: string, dates: string) {
 }
 
 function Exhibitions() {
+
+    useEffect(() => {
+        window.scrollTo({ top: 0})
+    }, [])
+
     return <div>
         <div className="w-full text-slate-900 text-center text-5xl p-4 pt-6">
             Trade Shows we exhibit at

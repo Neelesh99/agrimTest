@@ -1,5 +1,6 @@
 import {useParams} from "react-router-dom";
 import {findProductData, ProductData} from "../data/ProductsPageDataSource.tsx";
+import {useEffect} from "react";
 
 function capitalize(str: String){
     return str.charAt(0).toUpperCase() + str.slice(1).replace(/([A-Z])/g, ' $1').trim();
@@ -11,6 +12,11 @@ function ProductOverviewPage() {
     const productData = findProductData(productId as string) as ProductData
     const description = productData.description
     const imageSrc = productData.imageSrc
+
+    useEffect(() => {
+        window.scrollTo({ top: 0})
+    }, [])
+
     return <div>
         <div className="w-full text-slate-900 text-center text-5xl p-4">
             {capitalize(productId as string)}

@@ -11,6 +11,7 @@ import galangalSlices from "../assets/original/Untitled design.png"
 import {useNavigate} from "react-router-dom";
 import LiteYouTubeEmbed from 'react-lite-youtube-embed';
 import 'react-lite-youtube-embed/dist/LiteYouTubeEmbed.css'
+import {useEffect} from "react";
 
 function getProductCard(props: {
     name: string,
@@ -29,6 +30,11 @@ function getProductCard(props: {
 }
 
 function ProductsPage() {
+
+    useEffect(() => {
+        window.scrollTo({ top: 0})
+    }, [])
+
     return <div>
         <div className="w-full text-slate-900 text-center text-5xl p-4 pt-6">
             Our Products

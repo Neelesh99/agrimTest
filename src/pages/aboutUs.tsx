@@ -8,6 +8,7 @@ import factoryImg from "../assets/original/factory-icon.png"
 import hygene from "../assets/original/gloves-icon.png"
 import skilled from "../assets/original/skills-icon.png"
 import lab from "../assets/original/lab-icon.png"
+import {useEffect} from "react";
 
 function choiceCard(number: string, title: string, text: string) {
     return <div className="flex flex-col h-64 w-1/4">
@@ -25,6 +26,10 @@ function choiceCard(number: string, title: string, text: string) {
 }
 
 function AboutUsPage() {
+
+    useEffect(() => {
+        window.scrollTo({ top: 0})
+    }, [])
 
     const card1Text = "By optimising our processes, we ensure full visibility across the supply chain, from procurement to delivery. Each product is customised according to the customer's specific requirements."
     const card2Text = "As an ISO, GMP, and HACCP-certified company, we adhere to the highest international standards in every aspect of our operations. These certifications reflect our dedication to delivering safe, premium-quality products."

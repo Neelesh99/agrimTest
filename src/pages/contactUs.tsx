@@ -1,5 +1,5 @@
 import emailjs from 'emailjs-com';
-import React, { useState } from "react";
+import React, {useEffect, useState} from "react";
 import ConfirmationPopUp from "../components/ConfirmationPopUp.tsx";
 
 function EntryBox(props: {label: string, update: (newVal: string) => void}) {
@@ -61,6 +61,10 @@ function ContactUsPage() {
     const [emailState, setEmailState] = useState("");
     const [phoneState, setPhoneState] = useState("");
     const [companyState, setCompanyState] = useState("");
+
+    useEffect(() => {
+        window.scrollTo({ top: 0})
+    }, [])
 
     return <div>
         <div className="w-full text-slate-900 text-center text-5xl p-4 pt-6">

@@ -7,6 +7,7 @@ import qualityLogo from "../assets/original/TQSCI.jpeg"
 import gmp from "../assets/original/gmp.jpeg"
 import haccp from "../assets/original/haccp.jpeg"
 import {useNavigate} from "react-router-dom";
+import {useEffect} from "react";
 
 function getProductCard(props: {name: string, url: string, link: string}) {
     const fullLink = "/agrimTest/product/" + props.link;
@@ -52,6 +53,10 @@ function Home() {
     before:to-white/0
     before:w-1/6
     before:z-[-5]`
+
+    useEffect(() => {
+        window.scrollTo({ top: 0})
+    }, [])
 
     return (
         <div>
