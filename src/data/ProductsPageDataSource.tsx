@@ -1,4 +1,6 @@
 import cassiaOriginal from "../assets/original/cassia.jpg"
+import cutter from "../assets/original/Cutter1.jpg"
+import cassiaMix from "../assets/original/Cassia-Mix.jpg"
 import cloves from "../assets/Cloves.png"
 import nutmeg from "../assets/original/nutmegOnly.jpg"
 import mace from "../assets/original/mace.jpg"
@@ -12,6 +14,7 @@ import galangalSlices from "../assets/original/GalangalSlices.png"
 export interface ProductData {
     description: JSX.Element,
     imageSrc: string,
+    lowerGallery?: JSX.Element,
 }
 
 export function findProductData(productName: string): ProductData | undefined {
@@ -58,17 +61,32 @@ function cassiaElements() {
             Ceylon cinnamon sticks have many thin layers and can easily be made into powder using a coffee or
             spice grinder, whereas cassia sticks are extremely hard and are usually made up of one thick layer.
         <br/><br/>
-        <h6 className="font-bold text-lg">Cassia Powder</h6>
-            Cassia powder is made up from Broken Cassia chips (KABC or KBBC), which is derived from the bark of
-        Cinnamomum aromaticum tree. It is also used as a flavoring agent for confectionery, desserts, pastries, and meat;
-        it is specified in many curry recipes, just like Cassia’s other forms.
+        <h6 className="font-bold text-lg">Grades</h6>
+        <ul>
+            <li>Cassia Vera A and AA cut sticks , 6cm – 60cm</li>
+            <li>Cassia A Long sticks</li>
+            <li>Cassia Broken - KABC</li>
+            <li>Cassia Broken - KBBC</li>
+            <li>Cassia Kibbled - 3-8mm</li>
+            <li>Cassia TBC (Tea Bag Cut)</li>
+            <li>Cassia Granules below 1mm</li>
+            <li>Ground Cassia (Variable Mesh Size & Oil content)</li>
+        </ul>
+    </div>
+}
+
+function cassiaLowerGallery() {
+    return <div className="flex flex-row space-x-4">
+        <img src={cassiaOriginal} className="h-64"/>
+        <img src={cutter} className="h-64"/>
     </div>
 }
 
 function cassiaDescription() : ProductData {
     return {
         description: cassiaElements(),
-        imageSrc: cassiaOriginal
+        imageSrc: cassiaMix,
+        lowerGallery: cassiaLowerGallery()
     }
 }
 
