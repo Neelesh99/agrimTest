@@ -43,7 +43,7 @@ function Header() {
                                 <NavigationSpacer/>
                                 <NavigationButton name="Products" link="/agrimTest/products"/>
                                 <NavigationSpacer/>
-                                <NavigationButton name="Exhibitions" link="/agrimTest/"/>
+                                <NavigationButton name="Exhibitions" link="/agrimTest/exhibitions"/>
                                 <NavigationSpacer/>
                                 <NavigationButton name="Contact Us" link="/agrimTest/contactUs"/>
                             </div>

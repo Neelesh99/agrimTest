@@ -12,6 +12,7 @@ import ProductsPage from "./pages/products.tsx";
 import ProductOverviewPage from "./pages/productOverviewPage.tsx";
 import Header from "./components/Header.tsx";
 import Footer from "./components/Footer.tsx";
+import Exhibitions from "./pages/exhibitions.tsx";
 
 function frameContent(element: ReactElement) {
     return (
@@ -44,6 +45,10 @@ const router = createBrowserRouter([
     {
         path: "agrimTest/product/:productId",
         element: frameContent(<ProductOverviewPage/>)
+    },
+    {
+        path: "agrimTest/exhibitions",
+        element: frameContent(<Exhibitions/>)
     }
 ]);
 
