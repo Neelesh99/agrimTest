@@ -6,7 +6,7 @@ import clovesStem from "../assets/original/cloveStem.jpg"
 import starAnise from "../assets/original/starAnise.jpg"
 import blackPepper from "../assets/original/blackPepper.jpg";
 import longPepper from "../assets/original/LongPepperSwuare.jpeg"
-import tumericSlices from "../assets/original/tumericSlices.jpg"
+import tumericSlices from "../assets/original/turmeric slices.png"
 import galangalSlices from "../assets/original/GalangalSlices.jpg"
 import {useNavigate} from "react-router-dom";
 import LiteYouTubeEmbed from 'react-lite-youtube-embed';
@@ -30,7 +30,7 @@ function getProductCard(props: {
 
 function ProductsPage() {
     return <div>
-        <div className="w-full text-slate-900 text-center font-bold text-4xl p-4">
+        <div className="w-full text-slate-900 text-center text-5xl p-4 pt-6">
             Our Products
         </div>
         <div className="flex flex-wrap text-white w-3/4 mx-auto py-6">
@@ -44,6 +44,9 @@ function ProductsPage() {
             {getProductCard({name: "Long Pepper", imageUrl: longPepper, link: "longPepper"})}
             {getProductCard({name: "Tumeric Slices", imageUrl: tumericSlices, link: "tumericSlices"})}
             {getProductCard({name: "Galangal Slices", imageUrl: galangalSlices, link: "galangalSlices"})}
+        </div>
+        <div className="text-slate-900 text-center text-4xl">
+            Our Manufacturing Process
         </div>
         <div className="w-4/6 mx-auto">
             <div className="py-12">

@@ -1,4 +1,5 @@
 import imageSrc from "../assets/agrim logo transparent.png";
+import placeholder from "../assets/img.png"
 import {useNavigate} from "react-router-dom";
 
 
@@ -28,16 +29,16 @@ function Header() {
                         <div className="flex flex-row">
                             <img className="object-contain h-32 w-52 cursor-pointer" src={imageSrc}
                                  onClick={() => navigate("/agrimTest/")}/>
-                            <div className="flex items-end text-base">
-                                <div className="flex-col self-end">
-                                    <div>Delivering</div>
-                                    <div>performance</div>
-                                    <div>with integrity</div>
+                            <div className="flex items-end">
+                                <div className="flex flex-col self-end">
+                                    <img className="object-contain w-64 cursor-pointer" src={placeholder}
+                                         onClick={() => navigate("/agrimTest/")}/>
+                                    <div className="pl-4 text-xl">Delivering performance with integrity</div>
                                 </div>
                             </div>
                         </div>
                         <div className="flex items-end px-2">
-                            <div className="flex flex-row">
+                        <div className="flex flex-row">
                                 <NavigationButton name="About Us" link="/agrimTest/aboutUs"/>
                                 <NavigationSpacer/>
                                 <NavigationButton name="Products" link="/agrimTest/products"/>

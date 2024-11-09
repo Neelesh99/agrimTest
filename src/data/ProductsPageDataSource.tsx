@@ -7,7 +7,7 @@ import clovesStem from "../assets/original/cloveStem.jpg"
 import starAnise from "../assets/original/starAnise.jpg"
 import longPepper from "../assets/original/LongPepper-1.jpg"
 import tumericSlices from "../assets/original/tumericSlices.jpg"
-import galangalSlices from "../assets/original/GalangalSlices.jpg"
+import galangalSlices from "../assets/original/GalangalSlices.png"
 
 export interface ProductData {
     description: JSX.Element,

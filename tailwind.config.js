@@ -7,7 +7,7 @@ export default {
   theme: {
       extend: {
           fontFamily: {
-                  customFont: ['"algeria"', "serif"],
+                  customFont: ['doto', "serif"],
               // Add more custom font families as needed
           },
           colors: {

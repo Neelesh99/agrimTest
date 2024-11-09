@@ -1,5 +1,5 @@
 import emailjs from 'emailjs-com';
-import React, {useState} from "react";
+import React, { useState } from "react";
 import ConfirmationPopUp from "../components/ConfirmationPopUp.tsx";
 
 function EntryBox(props: {label: string, update: (newVal: string) => void}) {
