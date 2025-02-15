@@ -6,7 +6,7 @@ import thaifex from "../assets/original/images.png"
 import {useEffect} from "react";
 
 function getShow(location: string, imgUrl: string, dates: string) {
-    return <div className="w-1/4 flex flex-col h-64">
+    return <div className="w-1/4 flex flex-col h-64 justify-center">
         <img className="w-full rounded-md object-contain mb-4 max-h-40" src={imgUrl}/>
         <div className="font-bold text-center">{location}</div>
         <div className="text-center">{dates}</div>
@@ -23,14 +23,14 @@ function Exhibitions() {
         <div className="w-full text-slate-900 text-center text-5xl p-4 pt-6">
             Trade Shows we exhibit at
         </div>
-        <div className="w-full flex flex-row justify-between mt-12">
+        <div className="w-full flex flex-row justify-between mt-12 items-center h-full">
             {getShow("Paris, France", sial, "19 -23 October 2024")}
             {getShow("Dubai, UAE", gulffood, "17 - 21 February 2025")}
             {getShow("Cologne, Germany", anuga, "4 - 8 October 2025")}
         </div>
         <div className="w-full flex flex-row justify-around mb-12">
-            {getShow("Chicago, USA", ift, "19 -23 October 2024")}
-            {getShow("Bangkok, Thailand", thaifex, "17 - 21 February 2025")}
+            {getShow("Bangkok, Thailand", thaifex, "27 - 31 May 2025")}
+            {getShow("Chicago, USA", ift, "13 - 16 July 2025")}
         </div>
     </div>
 }

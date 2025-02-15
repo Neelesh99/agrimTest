@@ -1,34 +1,46 @@
-import germanFlag from "../assets/germanFlag.png"
-import anugaLogo from "../assets/anugaLogo.png"
-
-function ExhibitionCard() {
-    return <div className="grid grid-cols-1 grid-rows-6">
-        <div className="text-right text-white row-span-1 bg-slate-900 p-1 pr-5 rounded-t-md">
-            Meet us at upcoming exhibitions
-        </div>
-        <div className="row-span-5 bg-slate-100 p-2 px-4 grid grid-cols-1 grid-rows-2 rounded-b-md">
-            <div className="flex justify-between">
-                <img src={germanFlag} className="h-12 w-15"/>
-                <img src={anugaLogo} className="h-14 w-14"/>
-            </div>
-            <div className="text-right">Anuga, Germany<br/>
-                Booth number: Hall 1.1, Aisle C-010<br/>
-                9 - 13 October 2024<br/> </div>
-        </div>
-    </div>
-}
+import whatsappLogo from "../assets/whatsapp.png"
+import {NavigationButton} from "./Header.tsx";
 
 function Footer() {
     return <div className="bg-agrim w-screen h-fit p-6 bottom-0">
         <div className="mx-12 flex h-fit justify-between">
-            <div className="py-14">
-                <div className="text-white text-xl">
-                    trade@agrimltd.com <br/>
-                    Tel: +65 6638 8646 <br/>
-                    Whatsapp: +65 9169 4785 <br/>
+            <div className="flex flex-col space-y-4">
+                <NavigationButton name="Home" link="/"/>
+                <NavigationButton name="About Us" link="/aboutUs"/>
+                <NavigationButton name="Products" link="/products"/>
+                <NavigationButton name="Exhibitions" link="/exhibitions"/>
+                <NavigationButton name="Gallery" link="/exhibitions"/>
+                <NavigationButton name="Blog" link="/exhibitions"/>
+                <NavigationButton name="Contact Us" link="/contactUs"/>
+            </div>
+            <div className="w-1/3 max-w-96">
+                <div className="flex flex-col space-y-4">
+                    <div className="flex flex-row w-56 justify-between">
+                        <div className="text-xl text-white self-center">
+                            Follow Us
+                        </div>
+                        <a href="https://www.linkedin.com/company/agrimltd/">
+                            <img className="h-12 cursor-pointer" src={whatsappLogo}/>
+                        </a>
+                    </div>
+                    <div className="flex flex-row w-56 justify-between">
+                        <div className="text-xl text-white self-center">
+                            Email Us
+                        </div>
+                        <a href="mailto:trade@agrimltd.com">
+                            <img className="h-12 cursor-pointer" src={whatsappLogo}/>
+                        </a>
+                    </div>
+                    <div className="flex flex-row w-56 justify-between">
+                        <div className="text-xl text-white self-center">
+                            Whatsapp Us
+                        </div>
+                        <a href="tel:+62 811 6000 625">
+                            <img className="h-12 cursor-pointer" src={whatsappLogo}/>
+                        </a>
+                    </div>
                 </div>
             </div>
-            <div className="w-1/3 max-w-96"><ExhibitionCard/></div>
         </div>
     </div>
 }

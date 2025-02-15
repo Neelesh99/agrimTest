@@ -27,27 +27,27 @@ function frameContent(element: ReactElement) {
 
 const router = createBrowserRouter([
     {
-        path: "/agrimTest/",
+        path: "/",
         element: frameContent(<Home/>),
     },
     {
-        path: "/agrimTest/contactUs",
+        path: "/contactUs",
         element: frameContent(<ContactUsPage/>),
     },
     {
-        path: "/agrimTest/aboutUs",
+        path: "/aboutUs",
         element: frameContent(<AboutUsPage/>),
     },
     {
-        path: "/agrimTest/products",
+        path: "/products",
         element: frameContent(<ProductsPage/>),
     },
     {
-        path: "agrimTest/product/:productId",
+        path: "/product/:productId",
         element: frameContent(<ProductOverviewPage/>)
     },
     {
-        path: "agrimTest/exhibitions",
+        path: "/exhibitions",
         element: frameContent(<Exhibitions/>)
     }
 ]);
