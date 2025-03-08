@@ -10,6 +10,13 @@ import starAnise from "../assets/original/starAnise.jpg"
 import longPepper from "../assets/original/LongPepper-1.jpg"
 import tumericSlices from "../assets/original/tumericSlices.jpg"
 import galangalSlices from "../assets/original/GalangalSlices.png"
+import dessicated from "../assets/original/dessicated.jpeg"
+import water from "../assets/original/coconutWater.jpeg"
+import milkCream from "../assets/original/coconut-milkcream.jpg"
+import sugar from "../assets/original/cocosugar.jpg"
+import oil from "../assets/original/Coconut_and_oil.jpg"
+import flour from "../assets/original/coconut-flour-2bbbf1d.jpg"
+import butter from "../assets/original/butter.jpeg"
 
 export interface ProductData {
     description: JSX.Element,
@@ -177,48 +184,48 @@ function galangalSlicesDescription() {
 function dessicatedCoconut() {
     return {
         description: <div>At first, galangal or 'Khaa' in Thai, appears similar to ginger. However, a closer look will reveal the difference between galangal and ginger. Galangal has a tighter skin, is lighter in color, and can have pinkish portions too. Galangal tastes more like pepper than ginger, even though both grow underground as roots, and the method used to cook them (in various dishes) is similar too. The galangal that originated in Indonesia is also called, lengkuas and has a sharp flavour and pine like aroma. This is more commonly found in fresh or dried (powder) form. The second type of galangal, has a pungent flavour and tastes like a combination of pepper and ginger. It is commonly used as a seasoning ingredient in Thai food and many seafood, meat, and curry dishes.</div>,
-        imageSrc: galangalSlices
+        imageSrc: dessicated
     }
 }
 
 function coconutWater() {
     return {
         description: <div>At first, galangal or 'Khaa' in Thai, appears similar to ginger. However, a closer look will reveal the difference between galangal and ginger. Galangal has a tighter skin, is lighter in color, and can have pinkish portions too. Galangal tastes more like pepper than ginger, even though both grow underground as roots, and the method used to cook them (in various dishes) is similar too. The galangal that originated in Indonesia is also called, lengkuas and has a sharp flavour and pine like aroma. This is more commonly found in fresh or dried (powder) form. The second type of galangal, has a pungent flavour and tastes like a combination of pepper and ginger. It is commonly used as a seasoning ingredient in Thai food and many seafood, meat, and curry dishes.</div>,
-        imageSrc: galangalSlices
+        imageSrc: water
     }
 }
 
 function coconutMilk() {
     return {
         description: <div>At first, galangal or 'Khaa' in Thai, appears similar to ginger. However, a closer look will reveal the difference between galangal and ginger. Galangal has a tighter skin, is lighter in color, and can have pinkish portions too. Galangal tastes more like pepper than ginger, even though both grow underground as roots, and the method used to cook them (in various dishes) is similar too. The galangal that originated in Indonesia is also called, lengkuas and has a sharp flavour and pine like aroma. This is more commonly found in fresh or dried (powder) form. The second type of galangal, has a pungent flavour and tastes like a combination of pepper and ginger. It is commonly used as a seasoning ingredient in Thai food and many seafood, meat, and curry dishes.</div>,
-        imageSrc: galangalSlices
+        imageSrc: milkCream
     }
 }
 
 function coconutSugar() {
     return {
         description: <div>At first, galangal or 'Khaa' in Thai, appears similar to ginger. However, a closer look will reveal the difference between galangal and ginger. Galangal has a tighter skin, is lighter in color, and can have pinkish portions too. Galangal tastes more like pepper than ginger, even though both grow underground as roots, and the method used to cook them (in various dishes) is similar too. The galangal that originated in Indonesia is also called, lengkuas and has a sharp flavour and pine like aroma. This is more commonly found in fresh or dried (powder) form. The second type of galangal, has a pungent flavour and tastes like a combination of pepper and ginger. It is commonly used as a seasoning ingredient in Thai food and many seafood, meat, and curry dishes.</div>,
-        imageSrc: galangalSlices
+        imageSrc: sugar
     }
 }
 
 function virginCoconutOil() {
     return {
         description: <div>At first, galangal or 'Khaa' in Thai, appears similar to ginger. However, a closer look will reveal the difference between galangal and ginger. Galangal has a tighter skin, is lighter in color, and can have pinkish portions too. Galangal tastes more like pepper than ginger, even though both grow underground as roots, and the method used to cook them (in various dishes) is similar too. The galangal that originated in Indonesia is also called, lengkuas and has a sharp flavour and pine like aroma. This is more commonly found in fresh or dried (powder) form. The second type of galangal, has a pungent flavour and tastes like a combination of pepper and ginger. It is commonly used as a seasoning ingredient in Thai food and many seafood, meat, and curry dishes.</div>,
-        imageSrc: galangalSlices
+        imageSrc: oil
     }
 }
 
 function coconutFlour() {
     return {
         description: <div>At first, galangal or 'Khaa' in Thai, appears similar to ginger. However, a closer look will reveal the difference between galangal and ginger. Galangal has a tighter skin, is lighter in color, and can have pinkish portions too. Galangal tastes more like pepper than ginger, even though both grow underground as roots, and the method used to cook them (in various dishes) is similar too. The galangal that originated in Indonesia is also called, lengkuas and has a sharp flavour and pine like aroma. This is more commonly found in fresh or dried (powder) form. The second type of galangal, has a pungent flavour and tastes like a combination of pepper and ginger. It is commonly used as a seasoning ingredient in Thai food and many seafood, meat, and curry dishes.</div>,
-        imageSrc: galangalSlices
+        imageSrc: flour
     }
 }
 
 function coconutButter() {
     return {
         description: <div>At first, galangal or 'Khaa' in Thai, appears similar to ginger. However, a closer look will reveal the difference between galangal and ginger. Galangal has a tighter skin, is lighter in color, and can have pinkish portions too. Galangal tastes more like pepper than ginger, even though both grow underground as roots, and the method used to cook them (in various dishes) is similar too. The galangal that originated in Indonesia is also called, lengkuas and has a sharp flavour and pine like aroma. This is more commonly found in fresh or dried (powder) form. The second type of galangal, has a pungent flavour and tastes like a combination of pepper and ginger. It is commonly used as a seasoning ingredient in Thai food and many seafood, meat, and curry dishes.</div>,
-        imageSrc: galangalSlices
+        imageSrc: butter
     }
 }
