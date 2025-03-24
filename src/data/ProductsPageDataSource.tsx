@@ -6,7 +6,7 @@ import nutmeg from "../assets/original/nutmegOnly.jpg"
 import mace from "../assets/original/mace.jpg"
 import blackPepper from "../assets/original/blackPepper.jpg"
 import clovesStem from "../assets/original/cloveStem.jpg"
-import starAnise from "../assets/original/starAnise.jpg"
+import whiteCardamom from "../assets/original/WhiteCardamom.jpg"
 import longPepper from "../assets/original/LongPepper-1.jpg"
 import tumericSlices from "../assets/original/tumericSlices.jpg"
 import galangalSlices from "../assets/original/GalangalSlices.png"
@@ -43,8 +43,8 @@ export function findProductData(productName: string): ProductData | undefined {
     if (productName === "clovesStem") {
         return clovesStemDescription()
     }
-    if (productName === "starAnise") {
-        return starAniseDescription()
+    if (productName === "whiteCardamom") {
+        return whiteCardamomDescription()
     }
     if (productName === "longPepper") {
         return longPepperDescription()
@@ -55,25 +55,25 @@ export function findProductData(productName: string): ProductData | undefined {
     if (productName === "galangalSlices") {
         return galangalSlicesDescription()
     }
-    if (productName === "dessicatedcoco") {
+    if (productName === "dessicatedCoconut") {
         return dessicatedCoconut()
     }
-    if (productName === "cocowater") {
+    if (productName === "coconutWater") {
         return coconutWater()
     }
-    if (productName === "cocomilk") {
+    if (productName === "coconutMilk") {
         return coconutMilk()
     }
-    if (productName === "cocosugar") {
+    if (productName === "coconutSugar") {
         return coconutSugar()
     }
-    if (productName === "cocooil") {
+    if (productName === "coconutOil") {
         return virginCoconutOil()
     }
-    if (productName === "cocoflour") {
+    if (productName === "coconutFlour") {
         return coconutFlour()
     }
-    if (productName === "cocobutter") {
+    if (productName === "coconutButter") {
         return coconutButter()
     }
     return undefined
@@ -153,10 +153,10 @@ function clovesStemDescription() {
     }
 }
 
-function starAniseDescription() {
+function whiteCardamomDescription() {
     return {
-        description: <div>Star Anise is the dried fruit of the Illicium verum tree, native to northeast Vietnam and southern China. This evergreen tree can grow up to 26 feet tall and bears star-shaped fruits, each containing seeds with a licorice-like flavor. The fruits are harvested just before ripening and then dried to enhance their aroma and taste. Star Anise is a key ingredient in Chinese five-spice powder and is also used to flavor dishes in Indian, Vietnamese, and Malaysian cuisines. In addition to its culinary uses, Star Anise is prized for its medicinal properties.</div>,
-        imageSrc: starAnise
+        description: <div>White cardamom found in Indonesia, is a variety distinct from the more common green cardamom. It has a pale, cream-colored shell and smaller seeds with a mild, slightly sweet, and earthy flavor. This type of cardamom is widely used in Indonesian cuisine, traditional medicine, and herbal remedies. It is often added to soups, stews, and spice blends like bumbu to enhance aroma and taste. Compared to green cardamom, Indonesian white cardamom has a subtler fragrance and is less pungent.</div>,
+        imageSrc: whiteCardamom
     }
 }
 
@@ -183,49 +183,108 @@ function galangalSlicesDescription() {
 
 function dessicatedCoconut() {
     return {
-        description: <div>At first, galangal or 'Khaa' in Thai, appears similar to ginger. However, a closer look will reveal the difference between galangal and ginger. Galangal has a tighter skin, is lighter in color, and can have pinkish portions too. Galangal tastes more like pepper than ginger, even though both grow underground as roots, and the method used to cook them (in various dishes) is similar too. The galangal that originated in Indonesia is also called, lengkuas and has a sharp flavour and pine like aroma. This is more commonly found in fresh or dried (powder) form. The second type of galangal, has a pungent flavour and tastes like a combination of pepper and ginger. It is commonly used as a seasoning ingredient in Thai food and many seafood, meat, and curry dishes.</div>,
+        description: <div>Desiccated coconut is dried, shredded coconut meat that retains the rich flavor
+            and texture of fresh coconut. It's commonly used in baking, cooking, and as a topping for various dishes, offering a sweet, nutty taste and a chewy texture. It's available in various forms, such as finely shredded or coarsely chopped.
+            <p></p>
+            <div className="font-bold">Benefits</div>
+            Desiccated coconut is rich in healthy fats, fiber, and essential minerals like iron and
+            magnesium. It supports heart health, digestion, and provides a natural energy boost. Additionally, it's a good source of antioxidants and can be a versatile addition to various recipes.
+        </div>,
         imageSrc: dessicated
     }
 }
 
 function coconutWater() {
     return {
-        description: <div>At first, galangal or 'Khaa' in Thai, appears similar to ginger. However, a closer look will reveal the difference between galangal and ginger. Galangal has a tighter skin, is lighter in color, and can have pinkish portions too. Galangal tastes more like pepper than ginger, even though both grow underground as roots, and the method used to cook them (in various dishes) is similar too. The galangal that originated in Indonesia is also called, lengkuas and has a sharp flavour and pine like aroma. This is more commonly found in fresh or dried (powder) form. The second type of galangal, has a pungent flavour and tastes like a combination of pepper and ginger. It is commonly used as a seasoning ingredient in Thai food and many seafood, meat, and curry dishes.</div>,
+        description: <div>UHT (Ultra-High Temperature) coconut water is coconut water that has been
+            heated to a high temperature for a brief period to kill harmful bacteria and extend shelf life without the need for preservatives. It retains most of the natural flavor and nutrients of fresh coconut water, offering a convenient, long-lasting, and refreshing drink that is rich in electrolytes, potassium, and hydration.
+            <p></p>
+            <div className="font-bold">Benefits</div>
+                UHT coconut water hydrates, replenishes electrolytes, and is low in calories. It's rich in
+            vitamins, minerals, and antioxidants, supporting heart health and digestion, while offering the convenience of a long shelf life.
+            <p></p>
+            <div className="font-bold">Packaging</div>
+                BIB (20kg) or Drum (225kg)
+        </div>,
         imageSrc: water
     }
 }
 
 function coconutMilk() {
     return {
-        description: <div>At first, galangal or 'Khaa' in Thai, appears similar to ginger. However, a closer look will reveal the difference between galangal and ginger. Galangal has a tighter skin, is lighter in color, and can have pinkish portions too. Galangal tastes more like pepper than ginger, even though both grow underground as roots, and the method used to cook them (in various dishes) is similar too. The galangal that originated in Indonesia is also called, lengkuas and has a sharp flavour and pine like aroma. This is more commonly found in fresh or dried (powder) form. The second type of galangal, has a pungent flavour and tastes like a combination of pepper and ginger. It is commonly used as a seasoning ingredient in Thai food and many seafood, meat, and curry dishes.</div>,
+        description: <div>Coconut milk and coconut cream are both made from the flesh of mature
+            coconuts but differ in consistency and fat content. Coconut milk is a thin, creamy liquid produced by blending grated coconut flesh with water, commonly used in cooking and beverages. Coconut cream, on the other hand, is a richer, thicker version with a higher fat content, often used in desserts, sauces, or as a dairy substitute in rich dishes. Both provide a subtle coconut flavour, adding richness to recipes.
+            <p></p>
+            <div className="font-bold">Benefits</div>
+            Coconut milk and cream are rich in healthy fats, which can boost metabolism and
+            provide energy. They're great dairy-free alternatives, support heart health, and are packed with vitamins and minerals. Additionally, they help boost immunity, promote skin health, and aid digestion.
+        </div>,
         imageSrc: milkCream
     }
 }
 
 function coconutSugar() {
     return {
-        description: <div>At first, galangal or 'Khaa' in Thai, appears similar to ginger. However, a closer look will reveal the difference between galangal and ginger. Galangal has a tighter skin, is lighter in color, and can have pinkish portions too. Galangal tastes more like pepper than ginger, even though both grow underground as roots, and the method used to cook them (in various dishes) is similar too. The galangal that originated in Indonesia is also called, lengkuas and has a sharp flavour and pine like aroma. This is more commonly found in fresh or dried (powder) form. The second type of galangal, has a pungent flavour and tastes like a combination of pepper and ginger. It is commonly used as a seasoning ingredient in Thai food and many seafood, meat, and curry dishes.</div>,
+        description: <div>Coconut Sugar is natural sugar made from the coconut palm tree sap's sugary fluid. The sap is placed at very high heat until water is evaporated and left with sugar granules. It is then sieved with different mesh sizes and packed.
+
+            <p></p>
+            <div className="font-bold">Benefits</div>
+            Coconut sugar is a natural sweetener with a low glycemic index, helping regulate blood sugar levels. It contains minerals like potassium, iron, and zinc, along with antioxidants for overall health.
+        </div>,
         imageSrc: sugar
     }
 }
 
 function virginCoconutOil() {
     return {
-        description: <div>At first, galangal or 'Khaa' in Thai, appears similar to ginger. However, a closer look will reveal the difference between galangal and ginger. Galangal has a tighter skin, is lighter in color, and can have pinkish portions too. Galangal tastes more like pepper than ginger, even though both grow underground as roots, and the method used to cook them (in various dishes) is similar too. The galangal that originated in Indonesia is also called, lengkuas and has a sharp flavour and pine like aroma. This is more commonly found in fresh or dried (powder) form. The second type of galangal, has a pungent flavour and tastes like a combination of pepper and ginger. It is commonly used as a seasoning ingredient in Thai food and many seafood, meat, and curry dishes.</div>,
+        description: <div>Virgin coconut oil is made from fresh, raw coconut meat through a cold-
+            pressing process, preserving its natural flavor, nutrients, and aroma. It's unrefined and free from chemicals, making it a popular choice for cooking, skincare, and haircare due to its health benefits and versatility.
+
+            <p></p>
+            <div className="font-bold">Benefits</div>
+            Virgin coconut oil is rich in healthy fats, antioxidants, and antimicrobial properties. It
+            supports heart health, boosts immunity, moisturizes skin, and promotes hair health. It can also aid digestion and provide a quick energy source.
+
+            <p></p>
+            <div className="font-bold">Packaging</div>
+            BIB (20kg) or Drum (200kg)
+        </div>,
         imageSrc: oil
     }
 }
 
 function coconutFlour() {
     return {
-        description: <div>At first, galangal or 'Khaa' in Thai, appears similar to ginger. However, a closer look will reveal the difference between galangal and ginger. Galangal has a tighter skin, is lighter in color, and can have pinkish portions too. Galangal tastes more like pepper than ginger, even though both grow underground as roots, and the method used to cook them (in various dishes) is similar too. The galangal that originated in Indonesia is also called, lengkuas and has a sharp flavour and pine like aroma. This is more commonly found in fresh or dried (powder) form. The second type of galangal, has a pungent flavour and tastes like a combination of pepper and ginger. It is commonly used as a seasoning ingredient in Thai food and many seafood, meat, and curry dishes.</div>,
+        description: <div>Coconut flour is a gluten-free, high-fiber flour made from dried and finely
+            ground coconut meat. It has a mild coconut flavor and is commonly used in baking, especially for gluten-free and low-carb recipes. It absorbs more liquid than regular flour, so recipes may require adjustments.
+
+            <p></p>
+            <div className="font-bold">Benefits</div>
+            Coconut flour is high in fiber, gluten-free, and low in carbohydrates, making it ideal for
+            digestive health and weight management. It’s also rich in healthy fats and proteins, supporting energy and muscle health.
+
+            <p></p>
+            <div className="font-bold">Packaging</div>
+            Bag 10kg or 25kg
+        </div>,
         imageSrc: flour
     }
 }
 
 function coconutButter() {
     return {
-        description: <div>At first, galangal or 'Khaa' in Thai, appears similar to ginger. However, a closer look will reveal the difference between galangal and ginger. Galangal has a tighter skin, is lighter in color, and can have pinkish portions too. Galangal tastes more like pepper than ginger, even though both grow underground as roots, and the method used to cook them (in various dishes) is similar too. The galangal that originated in Indonesia is also called, lengkuas and has a sharp flavour and pine like aroma. This is more commonly found in fresh or dried (powder) form. The second type of galangal, has a pungent flavour and tastes like a combination of pepper and ginger. It is commonly used as a seasoning ingredient in Thai food and many seafood, meat, and curry dishes.</div>,
+        description: <div>Coconut butter is made from pureed coconut meat, offering a creamy texture
+            with both the oil and fiber of the coconut. It has a rich, nutty flavor and is often used as a spread, in baking, or as a dairy-free alternative in various recipes.
+
+            <p></p>
+            <div className="font-bold">Benefits</div>
+            Coconut butter is rich in healthy fats, fiber, and antioxidants. It supports heart health,
+            digestion, and provides sustained energy. It also nourishes the skin and can be used as a natural moisturizer.
+
+            <p></p>
+            <div className="font-bold">Packaging</div>
+            BIB 20 Kg
+        </div>,
         imageSrc: butter
     }
 }

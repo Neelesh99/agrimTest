@@ -3,7 +3,7 @@ import nutmeg from "../assets/original/nutmegOnly.jpg";
 import mace from "../assets/original/mace.jpg"
 import cloves from "../assets/Cloves.png";
 import clovesStem from "../assets/original/cloveStem.jpg"
-import starAnise from "../assets/original/starAnise.jpg"
+import whiteCardamom from "../assets/original/WhiteCardamom.jpg"
 import blackPepper from "../assets/original/blackPepper.jpg";
 import longPepper from "../assets/original/LongPepperSwuare.jpeg"
 import tumericSlices from "../assets/original/turmeric slices.png"
@@ -54,7 +54,7 @@ function ProductsPage() {
                 {getProductCard({name: "Nutmeg", imageUrl: nutmeg, link: "nutmeg"})}
                 {getProductCard({name: "Mace", imageUrl: mace, link: "mace"})}
                 {getProductCard({name: "Cloves Stem", imageUrl: clovesStem, link: "clovesStem"})}
-                {getProductCard({name: "White Cardamom", imageUrl: starAnise, link: "starAnise"})}
+                {getProductCard({name: "White Cardamom", imageUrl: whiteCardamom, link: "whiteCardamom"})}
                 {getProductCard({name: "Black Pepper", imageUrl: blackPepper, link: "blackPepper"})}
                 {getProductCard({name: "Long Pepper", imageUrl: longPepper, link: "longPepper"})}
                 {getProductCard({name: "Tumeric Slices", imageUrl: tumericSlices, link: "tumericSlices"})}
@@ -64,13 +64,13 @@ function ProductsPage() {
         <div className="w-3/4 mx-auto">Coconut Products</div>
         <div className="flex flex-row justify-around">
             <div className="flex flex-wrap text-white w-3/4 mx-auto py-6 justify-start">
-                {getProductCard({name: "Desiccated Coconut", imageUrl: dessicated, link: "dessicatedcoco"})}
-                {getProductCard({name: "Coconut Water", imageUrl: water, link: "cocowater"})}
-                {getProductCard({name: "Coconut Milk/Cream", imageUrl: milkCream, link: "cocomilk"})}
-                {getProductCard({name: "Coconut Sugar", imageUrl: sugar, link: "cocosugar"})}
-                {getProductCard({name: "Virgin Coconut Oil", imageUrl: oil, link: "cocooil"})}
-                {getProductCard({name: "Coconut Flour", imageUrl: flour, link: "cocoflour"})}
-                {getProductCard({name: "Coconut Butter", imageUrl: butter, link: "cocobutter"})}
+                {getProductCard({name: "Desiccated Coconut", imageUrl: dessicated, link: "dessicatedCoconut"})}
+                {getProductCard({name: "Coconut Water", imageUrl: water, link: "coconutWater"})}
+                {getProductCard({name: "Coconut Milk/Cream", imageUrl: milkCream, link: "coconutMilk"})}
+                {getProductCard({name: "Coconut Sugar", imageUrl: sugar, link: "coconutSugar"})}
+                {getProductCard({name: "Virgin Coconut Oil", imageUrl: oil, link: "coconutOil"})}
+                {getProductCard({name: "Coconut Flour", imageUrl: flour, link: "coconutFlour"})}
+                {getProductCard({name: "Coconut Butter", imageUrl: butter, link: "coconutButter"})}
             </div>
         </div>
         <div className="text-slate-900 text-center text-4xl">

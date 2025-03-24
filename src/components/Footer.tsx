@@ -1,4 +1,6 @@
 import whatsappLogo from "../assets/whatsapp.png"
+import linkedInLogo from "../assets/original/Linkedin_circle_black-512.png"
+import emailLogo from "../assets/original/Pasted_Graphic-removebg-preview.png"
 import {NavigationButton} from "./Header.tsx";
 
 function Footer() {
@@ -28,7 +30,7 @@ function Footer() {
                             Email Us
                         </div>
                         <a href="mailto:trade@agrimltd.com">
-                            <img className="h-12 cursor-pointer" src={whatsappLogo}/>
+                            <img className="h-12 cursor-pointer" src={emailLogo}/>
                         </a>
                     </div>
                     <div className="flex flex-row w-56 justify-between">
@@ -36,7 +38,7 @@ function Footer() {
                             Whatsapp Us
                         </div>
                         <a href="tel:+62 811 6000 625">
-                            <img className="h-12 cursor-pointer" src={whatsappLogo}/>
+                            <img className="h-12 cursor-pointer" src={linkedInLogo}/>
                         </a>
                     </div>
                 </div>
