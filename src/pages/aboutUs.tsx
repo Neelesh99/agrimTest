@@ -20,7 +20,7 @@ function AboutUsPage() {
     }, [])
 
     return <div className="flex flex-col">
-        <div className="w-full text-slate-900 text-center text-3xl p-4 my-3">
+        <div className="w-full text-slate-900 text-center text-3xl p-4 mb-6">
             About Us
         </div>
         <div className="flex flex-col space-y-4 mx-auto w-full pb-4">
@@ -47,7 +47,7 @@ function AboutUsPage() {
             </div>
         </div>
         <div
-            className="w-full h-64 bg-agrimdarkgreen rounded-2xl mt-16 grid grid-rows-1 grid-cols-2 text-white px-12">
+            className="w-full h-64 bg-agrimdarkgreen rounded-2xl mt-12 grid grid-rows-1 grid-cols-2 text-white px-12">
             <div className="my-6 px-5">
                 <div className="text-2xl mt-4">
                     Agrim today
@@ -82,7 +82,7 @@ function AboutUsPage() {
                 </div>
             </div>
         </div>
-        <div className="bg-darkness my-10 h-80 text-white flex flex-col space-y-4 w-full px-12 py-8">
+        <div className="bg-darkness my-12 h-80 text-white flex flex-col space-y-4 w-full px-12 py-8">
             <div className="flex flex-col">
                 <div className="text-2xl mt-4">
                     Why choose us?
@@ -127,7 +127,7 @@ function AboutUsPage() {
                 </div>
             </div>
         </div>
-        <div className="grid grid-rows-1 grid-cols-8 flex-row w-full gap-8 my-20">
+        <div className="grid grid-rows-1 grid-cols-8 flex-row w-full gap-8 my-12">
             <div className="col-span-5">
                 <img src={workersWorking} className="w-full rounded-2xl"/>
             </div>
@@ -145,7 +145,7 @@ function AboutUsPage() {
                 </div>
             </div>
         </div>
-        <div className="grid grid-rows-1 grid-cols-8 flex-row w-full gap-8 my-20">
+        <div className="grid grid-rows-1 grid-cols-8 flex-row w-full gap-8 mb-6">
             <div className="col-span-4">
                 <div className="flex flex-col">
                     <div className="text-2xl mt-4">
@@ -178,7 +178,7 @@ function AboutUsPage() {
                 <img src={handouts} className="w-full rounded-2xl"/>
             </div>
         </div>
-        <div className="w-full p-4 mx-auto flex flex-col mt-4 space-y-4">
+        <div className="w-full p-4 mx-auto flex flex-col mt-6 space-y-4">
             <div className="flex flex-col mx-auto">
                 <div className="text-center text-3xl">Certifications</div>
                 <div className="h-1 bg-agrim w-44 my-1 rounded-full">

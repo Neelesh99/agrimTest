@@ -72,7 +72,7 @@ function ContactUsPage() {
         <div className="w-full text-slate-900 text-center text-2xl p-4 pt-6">
             Contact Us
         </div>
-        <div className="flex flex-row w-full justify-between my-10">
+        <div className="flex flex-row w-full justify-between my-6">
             <div className="w-5/12">
                 <div className="flex flex-col space-y-4 mx-auto pb-4">
                     <EntryBox label="Name" update={setNameState}/>
@@ -81,7 +81,7 @@ function ContactUsPage() {
                     <EntryBox label="Your phone number" update={setPhoneState}/>
                     <EntryBoxLarge label="Your message" update={setMessageState}/>
                 </div>
-                <div className="py-8 w-fit">
+                <div className="py-6 w-fit">
                     {getButton({
                         name: "Submit", emailProps: {
                             name: nameState,
@@ -93,7 +93,7 @@ function ContactUsPage() {
                     })}
                 </div>
             </div>
-            <div className="w-5/12 rounded-3xl bg-agrimdarkgreen flex flex-col p-8 text-white">
+            <div className="w-5/12 rounded-3xl bg-agrimdarkgreen flex flex-col p-6 text-white">
                 <div className="text-2xl">Offices</div>
                 <div className="text-agrim mt-4 font-bold">Singapore</div>
                 <div>

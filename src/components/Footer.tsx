@@ -6,14 +6,16 @@ import {NavigationButton} from "./Header.tsx";
 function Footer() {
     return <div className="bg-agrim w-screen h-fit p-6 bottom-0">
         <div className="mx-12 flex h-fit justify-between">
-            <div className="flex flex-col space-y-4">
-                <NavigationButton name="Home" link="/"/>
-                <NavigationButton name="About Us" link="/aboutUs"/>
-                <NavigationButton name="Products" link="/products"/>
-                <NavigationButton name="Exhibitions" link="/exhibitions"/>
-                <NavigationButton name="Gallery" link="/exhibitions"/>
-                <NavigationButton name="Blog" link="/exhibitions"/>
-                <NavigationButton name="Contact Us" link="/contactUs"/>
+            <div className="w-1/2">
+                <div className="grid grid-cols-2 gap-4">
+                    <NavigationButton name="Home" link="/"/>
+                    <NavigationButton name="About Us" link="/aboutUs"/>
+                    <NavigationButton name="Products" link="/products"/>
+                    <NavigationButton name="Exhibitions" link="/exhibitions"/>
+                    <NavigationButton name="Gallery" link="/exhibitions"/>
+                    <NavigationButton name="Blog" link="/exhibitions"/>
+                    <NavigationButton name="Contact Us" link="/contactUs"/>
+                </div>
             </div>
             <div className="w-1/3 max-w-96">
                 <div className="flex flex-col space-y-4">
